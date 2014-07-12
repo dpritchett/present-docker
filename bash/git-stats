@@ -1,24 +1,23 @@
 #!/usr/bin/env sh
-
 echo "Computing highest commits per day for a single user..."
 
 # git log with only email and date
-git log --format="%ce %ci" | \
+git log --format="%ce %ci" |            \
 
   # print the first and second whitespace-delimited tokens
-  awk '{ print $1 " " $2 }' | \
+  awk '{ print $1 " " $2 }' |           \
 
   # sort lexicographically
-  sort | \
+  sort |                                \
 
   # print the count of each unique adjacent line and the line
-  uniq -c | \
+  uniq -c |                             \
 
   # print the first, second, and third whitespace-delimited tokens
-  awk '{ print $1 " " $2 " " $3}' | \
+  awk '{ print $1 " " $2 " " $3}' |     \
 
   # sort in descending 'version sort' (natural) order
-  sort -rV | \
+  sort -rV |                            \
 
   # top 10 or so
   head

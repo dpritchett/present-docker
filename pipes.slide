@@ -1,11 +1,28 @@
 Pipes, Streams, Stuff
+Faster, simpler programs
+18:00 17 Jul 2014
+Tags: pipes, streams, programming
+
+Daniel Pritchett
+Coroutine
+http://blog.dpritchett.net
+@dpritchett
 
 * Bash
 
 .play bash/git-stats
 
-Stuff
+* Elixir
 
-* Slide 2
+.code elixir/examples/example.exs /START OMIT/,/END OMIT/
+.play elixir/demo.sh /START OMIT/,/END OMIT/
 
-More stuff
+* Clojure
+
+.code clojure/examples/hello_world.clj
+.play clojure/demo.sh /START OMIT/,/END OMIT/
+
+* F#
+
+.code fsharp/examples/example.fsx
+.play fsharp/demo.sh /START OMIT/,/END OMIT/
