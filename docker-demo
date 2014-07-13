@@ -2,4 +2,4 @@
 cd $1 $2
 . ./.env
 docker build --quiet="true" --tag=$TAG . > /dev/null && echo ""
-find . | grep $2 | xargs docker run  --rm -i $TAG $RUNNER
+find . | grep $2 | xargs docker run -i $TAG $RUNNER

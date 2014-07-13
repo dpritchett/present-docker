@@ -10,7 +10,8 @@ http://blog.dpritchett.net
 
 * Bash
 
-.play bash/git-stats
+.code bash/examples/words.sh
+.play bash/demo.sh /START OMIT/,/END OMIT/
 
 * Elixir
 
