@@ -1,0 +1,3 @@
+https://github.com/HashNuke/heroku-buildpack-elixir.git
+https://github.com/heroku/heroku-buildpack-clojure.git
+https://github.com/kr/heroku-buildpack-go.git
