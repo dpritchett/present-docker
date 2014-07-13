@@ -1,0 +1,19 @@
+# Ansible 1.6 playbook for deploying kessel to BigBang
+---
+- hosts: web
+  remote_user: root
+
+  tasks:
+    - name: install base packages
+      apt: name={{item}} state=installed update_cache=yes cache_valid_time=3600
+      with_items:
+        - git
+        - make
+        - mercurial
+        - unzip
+        - wget
+
+    #- include: tasks/clojure.yml
+    #- include: tasks/fsharp.yml
+    #- include: tasks/elixir.yml
+    - include: tasks/app.yml

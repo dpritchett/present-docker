@@ -1,0 +1,23 @@
+- name: install go
+  apt: name=golang state=latest
+
+- name: create gopath
+  command: mkdir /gopath
+    creates=/gopath
+
+- name: download present
+  command: env GOPATH=/gopath go get -u code.google.com/p/go.tools/present
+
+- name: install present
+  command: env GOPATH=/gopath go install code.google.com/p/go.tools/present
+
+- name: download forego
+  command: env GOPATH=/gopath go get -u github.com/ddollar/forego
+
+- name: install forego
+  command: env GOPATH=/gopath go install github.com/ddollar/forego
+
+- name: download demos
+  git: repo=https://github.com/dpritchett/learn_you_some_pipes.git
+    update=no
+    dest=/opt/learn_you_some_pipes
