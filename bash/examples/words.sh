@@ -1,3 +1,4 @@
-#!/usr/bin/env sh
-echo "Words"
-head /usr/share/dict/words
+#!/usr/bin/env bash
+# START OMIT
+head /usr/share/dict/words | sort -r
+# END OMIT

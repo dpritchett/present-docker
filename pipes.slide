@@ -1,6 +1,6 @@
 Pipes, Streams, Stuff
 Faster, simpler programs
-18:00 17 Jul 2014
+17 Jul 2014
 Tags: pipes, streams, programming
 
 Daniel Pritchett
@@ -9,21 +9,25 @@ http://blog.dpritchett.net
 @dpritchett
 
 * Bash
+[[http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-4.html][|]] is the pipe operator
 
-.code bash/examples/words.sh
+.code bash/examples/words.sh /START OMIT/,/END OMIT/
 .play bash/demo.sh /START OMIT/,/END OMIT/
 
+* F#
+[[http://msdn.microsoft.com/en-us/library/dd233229.aspx][|>]] is the pipe operator
+
+.code fsharp/examples/example.fsx
+.play fsharp/demo.sh /START OMIT/,/END OMIT/
+
 * Elixir
+[[http://joearms.github.io/2013/05/31/a-week-with-elixir.html][|>]] is the pipe operator here, too
 
 .code elixir/examples/example.exs /START OMIT/,/END OMIT/
 .play elixir/demo.sh /START OMIT/,/END OMIT/
 
 * Clojure
+[[http://clojuredocs.org/clojure_core/clojure.core/->][-> and ->>]] are threading macros
 
 .code clojure/examples/hello_world.clj
 .play clojure/demo.sh /START OMIT/,/END OMIT/
-
-* F#
-
-.code fsharp/examples/example.fsx
-.play fsharp/demo.sh /START OMIT/,/END OMIT/
