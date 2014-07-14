@@ -11,7 +11,7 @@
       command: dpkg -i erlang-solutions_1.0_all.deb
 
     - name: install erlang
-      apt: name=erlang state=installed update_cache=yes
+      apt: name=erlang state=latest update_cache=yes
 
     - name: download elixir
       git: repo=https://github.com/elixir-lang/elixir.git
