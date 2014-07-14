@@ -1,4 +1,3 @@
-# Ansible 1.6 playbook for deploying kessel to BigBang
 ---
 - hosts: web
   remote_user: root

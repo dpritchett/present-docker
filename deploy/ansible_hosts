@@ -1,2 +1,2 @@
 [web]
-dpritchett-docker
+localhost ansible_connection=local
