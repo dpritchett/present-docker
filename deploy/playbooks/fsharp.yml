@@ -10,4 +10,4 @@
         - fsharp
 
     - name: install fsharp runner
-      copy: src=../templates/fsharp-run dest=/usr/local/bin mode=775
+      template: src=../templates/fsharp-run dest=/usr/local/bin mode=775

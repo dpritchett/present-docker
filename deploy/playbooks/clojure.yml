@@ -2,8 +2,6 @@
 - hosts: web
   remote_user: root
 
-  include: java7.yml
-
   tasks:
 
     - name: create clojure directory
@@ -15,4 +13,4 @@
         creates=/opt/clojure/clojure-1.6.0.jar
 
     - name: install clojure runner
-      copy: src=../templates/clj-run dest=/usr/local/bin mode=775
+      template: src=../templates/clj-run dest=/usr/local/bin mode=775
