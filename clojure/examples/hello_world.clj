@@ -1,3 +1,5 @@
+#!/usr/local/bin/clj-run
+
 (println
   (-> "alpha bravo charlie delta"
       .toUpperCase
