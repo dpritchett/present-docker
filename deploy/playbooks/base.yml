@@ -11,3 +11,5 @@
         - mercurial
         - unzip
         - wget
+        - software-properties-common
+        - python-software-properties

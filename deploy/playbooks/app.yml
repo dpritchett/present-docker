@@ -24,8 +24,3 @@
 
     - name: install forego
       command: env GOPATH=/gopath go install github.com/ddollar/forego
-
-    - name: download demos
-      git: repo=https://github.com/dpritchett/learn_you_some_pipes.git
-        update=yes
-        dest=/opt/learn_you_some_pipes
