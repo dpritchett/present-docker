@@ -10,18 +10,11 @@
     - name: install erlang package list
       command: dpkg -i erlang-solutions_1.0_all.deb
 
-    - name: install erlang
-      apt: name=erlang state=latest update_cache=yes
-
-    - name: download elixir
-      git: repo=https://github.com/elixir-lang/elixir.git
-        update=no
-        dest=/opt/elixir
-        version=v0.14.3
-
-    - name: create elixir symlinks
-      command: bash -c "ln -s /opt/elixir/bin/{elixir,elixirc,iex,mix} /usr/local/bin/"
-        creates=/usr/local/bin/mix
+    - name: install erlang and elixir
+      apt: name=esl-erlang state=latest update_cache=yes
+      with_items:
+        - esl-erlang
+        - elixir
 
     - name: install elixir runner
       template: src=../templates/elixir-run dest=/usr/local/bin mode=775
