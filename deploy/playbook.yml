@@ -13,7 +13,7 @@
         - unzip
         - wget
 
-    #- include: tasks/clojure.yml
-    #- include: tasks/fsharp.yml
-    #- include: tasks/elixir.yml
+    - include: tasks/clojure.yml
+    - include: tasks/fsharp.yml
+    - include: tasks/elixir.yml
     - include: tasks/app.yml

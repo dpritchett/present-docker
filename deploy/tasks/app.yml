@@ -19,5 +19,5 @@
 
 - name: download demos
   git: repo=https://github.com/dpritchett/learn_you_some_pipes.git
-    update=no
+    update=yes
     dest=/opt/learn_you_some_pipes
