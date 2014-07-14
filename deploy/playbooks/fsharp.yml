@@ -4,7 +4,7 @@
 
   tasks:
     - name: install mono and fsharp
-      apt: name={{item}} state=installed update_cache=yes
+      apt: name={{item}} state=latest update_cache=yes
       with_items:
         - mono-complete
         - fsharp
