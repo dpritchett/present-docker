@@ -22,3 +22,6 @@
     - name: create elixir symlinks
       command: bash -c "ln -s /opt/elixir/bin/{elixir,elixirc,iex,mix} /usr/local/bin/"
         creates=/usr/local/bin/mix
+
+    - name: install elixir runner
+      template: src=../templates/elixir-run dest=/usr/local/bin mode=775

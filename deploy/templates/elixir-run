@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 HASHED=`head -100 /dev/urandom | md5sum | tr -d [:blank:]`
-FILENAME=/tmp/clj-script-$HASHED.clj
+FILENAME=/tmp/elixir-script-$HASHED.exs
 tail -n +2 $@ | sed '/^\s*$/d' | sed '/^#!/d' > $FILENAME
 
-java -cp /opt/clojure/clojure-1.6.0.jar clojure.main $FILENAME
+elixir $FILENAME
