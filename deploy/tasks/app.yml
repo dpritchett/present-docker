@@ -6,10 +6,10 @@
     creates=/gopath
 
 - name: download present
-  command: env GOPATH=/gopath go get -u code.google.com/p/go.tools/present
+  command: env GOPATH=/gopath go get -u code.google.com/p/go.tools/cmd/present
 
 - name: install present
-  command: env GOPATH=/gopath go install code.google.com/p/go.tools/present
+  command: env GOPATH=/gopath go install code.google.com/p/go.tools/cmd/present
 
 - name: download forego
   command: env GOPATH=/gopath go get -u github.com/ddollar/forego
