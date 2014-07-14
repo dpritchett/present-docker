@@ -1,4 +1,4 @@
 deploy:
-	ansible-playbook playbook.yml -i ansible_hosts
+	ansible-playbook site.yml -i ansible_hosts
 
 default: deploy-only

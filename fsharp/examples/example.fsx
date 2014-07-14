@@ -1,3 +1,4 @@
+#!/usr/local/bin/fsharp-run
 let addOne x = x + 1
 let timesTwo x = 2 * x
 

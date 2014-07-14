@@ -1,0 +1,18 @@
+---
+- hosts: web
+  remote_user: root
+
+  include: java7.yml
+
+  tasks:
+
+    - name: create clojure directory
+      command: mkdir -p /opt/clojure
+        creates=/opt/clojure
+
+    - name: get clojure jars
+      command: wget -O /opt/clojure/clojure-1.6.0.jar http://central.maven.org/maven2/org/clojure/clojure/1.6.0/clojure-1.6.0.jar 
+        creates=/opt/clojure/clojure-1.6.0.jar
+
+    - name: install clojure runner
+      copy: src=../templates/clj-run dest=/usr/local/bin mode=775
