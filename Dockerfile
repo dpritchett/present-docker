@@ -10,5 +10,8 @@ RUN apt-get install python-apt -qy
 ADD       .   /opt/present-docker
 WORKDIR   /opt/present-docker
 
+# set gopath for go execution
+ENV       GOPATH  /gopath
+
 # run playbook
 RUN ansible-playbook -i deploy/ansible_hosts deploy/site.yml
