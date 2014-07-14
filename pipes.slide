@@ -11,23 +11,19 @@ http://blog.dpritchett.net
 * Bash
 [[http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-4.html][|]] is the pipe operator
 
-.code bash/examples/words.sh /START OMIT/,/END OMIT/
-.play bash/demo.sh /START OMIT/,/END OMIT/
+.play bash/examples/words.sh
 
 * F#
 [[http://msdn.microsoft.com/en-us/library/dd233229.aspx][|>]] is the pipe operator
 
-.code fsharp/examples/example.fsx
-.play fsharp/demo.sh /START OMIT/,/END OMIT/
+.play fsharp/examples/example.fsx
 
 * Elixir
 [[http://joearms.github.io/2013/05/31/a-week-with-elixir.html][|>]] is the pipe operator here, too
 
-.code elixir/examples/example.exs /START OMIT/,/END OMIT/
-.play elixir/demo.sh /START OMIT/,/END OMIT/
+.play elixir/examples/example.exs
 
 * Clojure
 [[http://clojuredocs.org/clojure_core/clojure.core/->][-> and ->>]] are threading macros
 
-.code clojure/examples/hello_world.clj
-.play clojure/demo.sh /START OMIT/,/END OMIT/
+.play clojure/examples/hello_world.clj
