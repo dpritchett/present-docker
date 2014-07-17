@@ -1,5 +1,5 @@
 - include: playbooks/base.yml
-- include: playbooks/java.yml
+- include: playbooks/java7.yml
 - include: playbooks/clojure.yml
 - include: playbooks/fsharp.yml
 - include: playbooks/elixir.yml
